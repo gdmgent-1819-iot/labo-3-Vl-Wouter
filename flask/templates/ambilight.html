@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>AMBILIGHT</title>
+
+	<style>
+		.color {
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<p>Hello there</p>
+	<div class="color" style="background-color: {{ color['value'] }}">
+
+	</div>
+	<form action="" method="POST">
+		<input type="text" name="color" id="color" placeholder="color">
+		<input type="checkbox" name="on_off" id="on_off" {% if color['state'] == 'on' %} checked {% endif %}>
+	</form>
+</body>
+</html>
