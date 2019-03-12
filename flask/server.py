@@ -1,7 +1,7 @@
 '''
 Sensehat Dashboard
 --------------------
-Author: drdynscript
+Author: Vl-Wouter
 Modified: 03-12-2019
 --------------------
 Installation:
