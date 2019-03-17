@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pi Server | Ambilight</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Raleway:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <header class='o-header'>
+    <h1 class="a-title">Raspberry Pi 3B+</h1>
+    <h2 class="a-subtitle">With Sense Hat</h2>
+  </header>
+  <section class='o-content'>
+    <div class="o-half">
+      <h2>Environment Sensors</h2>
+      <table class='a-table'>
+        <thead>
+          <tr>
+            <th>Sensor</th>
+            <th>Value</th>
+            <th>Units</th>
+          </tr>
+        </thead>
+        <tbody id='sensorValues'></tbody>
+      </table>
+    </div>
+    <div class="o-half">
+      <h2>LED Ambient Light</h2>
+      <div class="o-content filled">
+        <div class="o-half">
+          <div class="a-color-box" id='colorBox'></div>
+        </div>
+        <div class="o-half">
+          <form action="">
+            <div class="a-form-field">
+              <label for="color_text">Color hex value</label>
+              <input type="text" name="color" id="color_text">
+            </div>
+            <div class="a-form-field">
+              <label for="color_picker">Color picker</label>
+              <input type="color" name="color2" id="color_picker">
+            </div>
+            <div class="a-form-field">
+              <label for="color_on_off">LED on/off</label>
+              <input type="checkbox" name="on_off" id="color_on_off">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Scripts -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script> -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

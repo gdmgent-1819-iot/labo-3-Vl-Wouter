@@ -110,5 +110,7 @@ def environment():
   return render_template('environment.html', environment=environment_obj)
 
 # Main method for Flask server
+schoolip = '10.5.129.10'
+homeip = '192.168.0.205'
 if __name__ == '__main__':
-  app.run(host = '10.5.129.10', port = 8080, debug = True)
+  app.run(host = homeip, port = 8080, debug = True)
